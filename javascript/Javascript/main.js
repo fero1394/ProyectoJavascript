@@ -11,7 +11,7 @@
 
     self.Board.prototype ={                                      //metodos de la clase retorna barras y pelota
         get elements(){                 //getter
-            var elements = this.bars;
+            var elements = this.bars.map(function(bar){ return bar; });
             elements.push(this.ball);
             
             return elements;
